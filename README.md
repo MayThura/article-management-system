@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Article Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Welcome to the Article Management System! This project is a fully functional front-end application built with React Js that allows users to manage articles, including creating, editing, viewing, and deleting articles. The application also includes user authentication and protected routes.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Authentication (Login/Logout)**
+  - Secure login/logout functionality.
+  - Example login credentials:
+    - Username: `admin1`, Password: `pswd123`
+    - Username: `admin2`, Password: `pswd456`
+- **Article Management**
+  - Create, edit, view, and delete articles in the dashboard.
+- **Search and Sort Articles**
+  - Search articles by title.
+  - Sort articles by title or author.
+- **Pagination and Adjustable Page Size**
+  - Navigate between pages of articles.
+  - Adjust the number of articles displayed per page.
+- **Responsive Design**
+  - Mobile-friendly and responsive layout.
+- **Mock API Layer**
+  - Simulated backend interactions.
+  - Easy integration with a real backend in the future.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Check out the live demo of the project:
 
-### `npm test`
+[Article Management System Live Demo](article-management-system-htfp5i4f0-maythuras-projects.vercel.app)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites
 
-### `npm run build`
+Before you begin, ensure you have met the following requirements:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (version 20.x or higher)
+- npm (version 9.x or higher)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Follow these steps to set up the project on your local machine:
 
-### `npm run eject`
+1. **Clone the Repository:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    git clone
+    cd article-management-system
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Install Dependencies:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Using npm:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    npm install
 
-## Learn More
+## Running the Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To start the development server, run:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Using npm:
 
-### Code Splitting
+    npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Open your browser and navigate to http://localhost:3000 to see the application running.
 
-### Analyzing the Bundle Size
+## Usage
+### User Authentication
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Login:** Users can log in with the provided example credentials. The mock API provides some default users.
+- **Logout:** Users can log out by clicking the logout button in the app bar.
 
-### Making a Progressive Web App
+### Article Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Create Article:** Click the "Add New Article" button on the dashboard and fill in the required fields to create a new article.
+- **View Article:** Click the view button to see the article details.
+- **Edit Article:** Click the edit icon next to an article to modify its content.
+- **Delete Article:** Click the delete icon next to an article and confirm the deletion in the dialog.
 
-### Advanced Configuration
+### Search and Sort
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Search:** Use the search bar to filter articles by title.
+- **Sort:** Click on the column headers (Title, Author) to sort the articles.
 
-### Deployment
+### Pagination
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Adjust Page Size:** Use the pagination controls at the bottom of the article list to navigate between pages and adjust the number of articles displayed per page.
 
-### `npm run build` fails to minify
+## Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To run the tests, use the following command:
+
+Using npm:
+
+    npm test

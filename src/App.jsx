@@ -36,21 +36,17 @@ const App = () => {
     const storedUser = JSON.parse(localStorage.getItem('user'));
     if (storedUser) {
       setUser(storedUser);
+      navigate('/dashboard');
+    } else {
+      navigate('/login');
     }
-  }, []);
+  }, [navigate]);
 
   const handleLogout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
     setUser(null);
     navigate('/login');
-  };
-
-  const getUserInitials = (name) => {
-    return name
-      .split(' ')
-      .map((n) => n[0])
-      .join('');
   };
 
   return (
