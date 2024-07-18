@@ -29,7 +29,7 @@ Welcome to the Article Management System! This project is a fully functional fro
 
 Check out the live demo of the project:
 
-[Article Management System Live Demo](article-management-system-htfp5i4f0-maythuras-projects.vercel.app)
+[Article Management System Live Demo](https://article-management-system-eta.vercel.app/)
 
 ## Prerequisites
 
