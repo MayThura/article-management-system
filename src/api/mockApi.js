@@ -42,6 +42,49 @@ let articles = [
     email: 'emilydavis@example.com',
     tags: ['java', 'programming'],
   },
+  {
+    id: 6,
+    title: 'Understanding TypeScript',
+    content: 'TypeScript extends JavaScript by adding types...',
+    author: 'Chris Lee',
+    email: 'chrislee@example.com',
+    tags: ['typescript', 'javascript'],
+  },
+  {
+    id: 7,
+    title: 'CSS Grid Layout',
+    content:
+      'CSS Grid Layout is a two-dimensional layout system for the web...',
+    author: 'Jessica White',
+    email: 'jessicawhite@example.com',
+    tags: ['css', 'web design'],
+  },
+  {
+    id: 8,
+    title: 'Mastering GraphQL',
+    content: 'GraphQL is a query language for your API...',
+    author: 'David Kim',
+    email: 'davidkim@example.com',
+    tags: ['graphql', 'api'],
+  },
+  {
+    id: 9,
+    title: 'Docker for Beginners',
+    content:
+      'Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers...',
+    author: 'Laura Green',
+    email: 'lauragreen@example.com',
+    tags: ['docker', 'containers'],
+  },
+  {
+    id: 10,
+    title: 'Building Progressive Web Apps',
+    content:
+      'Progressive Web Apps (PWAs) are web apps that use modern web capabilities to deliver an app-like experience to users...',
+    author: 'Michael Brown',
+    email: 'michaelbrown@example.com',
+    tags: ['pwa', 'web development'],
+  },
 ];
 
 const users = [
@@ -59,6 +102,15 @@ const availableTags = [
   'fashion',
   'clothing',
   'programming',
+  'typescript',
+  'css',
+  'web design',
+  'graphql',
+  'api',
+  'docker',
+  'containers',
+  'pwa',
+  'web development',
 ];
 
 const mockFetch = (data, shouldReject = false) => {

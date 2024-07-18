@@ -33,11 +33,20 @@ const App = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    setUser(null);
+  }, []);
+
+  useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem('user'));
-    if (storedUser) {
+    const token = localStorage.getItem('token');
+
+    if (storedUser && token) {
       setUser(storedUser);
-      navigate('/dashboard');
     } else {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
       navigate('/login');
     }
   }, [navigate]);
