@@ -1,0 +1,13 @@
+body {
+  background-color: #f4f6f8;
+  font-family: 'Roboto', sans-serif;
+}
+
+.MuiTypography-h4 {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.MuiTypography-body1 {
+  margin-bottom: 16px;
+}
